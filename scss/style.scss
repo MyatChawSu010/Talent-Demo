@@ -1,0 +1,84 @@
+@import '_header.scss';
+
+$color: #cfcfcf;
+
+body {
+  background-color: $color;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.l-warp-inner {
+  width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.p-bloc {
+  padding: 30px 50px 80px;
+
+  h4 {
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 1px solid $color;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $color;
+    margin-bottom: 50px;
+
+    .c-card {
+      width: calc(93% / 2);
+
+      &__txt {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+.c-btn {
+  width: 200px;
+  margin: 0 auto;
+
+  a {
+    color: #000;
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 30px;
+    background: #fff;
+    transition: background 2s ease;
+
+    &:hover {
+      background: $color;
+      color: #fff;
+      border: 2px solid $color;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .l-warp-inner {
+    max-width: 90%;
+  }
+
+  .p-bloc {
+    .c-card {
+      width: 100%;
+    }
+  }
+}
