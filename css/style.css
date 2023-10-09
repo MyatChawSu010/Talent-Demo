@@ -38,6 +38,19 @@ img {
 .p-bloc__card .c-card {
   width: 46.5%;
 }
+.p-bloc__card .c-card__img {
+  position: relative;
+}
+.p-bloc__card .c-card__img .badge {
+  padding: 10px;
+  background-color: #f00;
+  color: #fff;
+  text-align: center;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 .p-bloc__card .c-card__txt {
   padding: 20px;
 }

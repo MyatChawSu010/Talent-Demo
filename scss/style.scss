@@ -39,6 +39,21 @@ img {
     .c-card {
       width: calc(93% / 2);
 
+      &__img {
+        position: relative;
+
+        .badge {
+          padding: 10px;
+          background-color: #f00;
+          color: #fff;
+          text-align: center;
+          width: 50px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
       &__txt {
         padding: 20px;
       }
