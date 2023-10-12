@@ -1,7 +1,12 @@
+.p-bloc--activity {
+  margin-bottom: 30px;
+}
+
 .activity-content {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 
   .card-bloc {
     width: calc(100% / 4 - 15px);
